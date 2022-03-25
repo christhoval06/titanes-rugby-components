@@ -1,0 +1,123 @@
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *  "scripts"
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+ @tailwind base;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+@tailwind components;
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+ 
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+@tailwind utilities;
+/**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #31404b;
+    margin: 0 0 0.75em;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h1,
+  h2 {
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  h3,
+  h4 {
+    font-style: normal;
+  }
+
+  h4 {
+    font-size: 22px;
+    text-transform: none;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-style: normal;
+  }
+
+  h5,
+  h6 {
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 14px;
+    margin-bottom: 2em;
+    line-height: 26px;
+    font-size: normal;
+  }
